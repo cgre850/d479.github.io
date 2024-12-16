@@ -1,0 +1,156 @@
+html {
+    background-color: lightblue;
+}
+
+#menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lightblue;
+    display: block;
+}
+
+#menu #currentPage {
+    color: white;
+}
+
+#menu a:hover {
+    color: grey;
+}
+
+#menu .closeMenu {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menuButton {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: grey;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+#main {
+    transition: margin-left .5s;
+    /* padding: 20px; */
+    padding-bottom: 60px;
+}
+
+#main h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.content {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+}
+
+.content .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .container p {
+    max-width: 30vw;
+}
+
+.content img {
+    width: 400px;
+    height: auto;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+ul li .desc {
+    font-size: 15px;
+}
+
+.content .imgList {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.listIMG {
+    display: flex;
+    flex-direction: column;
+}
+
+.listIMG img {
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+}
+
+.slideShow {
+    position: relative;
+}
+
+.slideShow .slides {
+    display: none;
+}
+
+.slideShow a {
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.slideShow a:hover {
+    cursor: pointer;
+    background-color: rgba(112, 110, 110, 0.8);
+    border-radius: 3px;
+}
+
+.slideShow #firstIMG {
+    display: block;
+}

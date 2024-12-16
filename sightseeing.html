@@ -1,0 +1,43 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Taniti</title>
+		<link rel="stylesheet" href="styles.css">   
+	</head>
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+    </script>
+    <main>
+        <div id="menu" onmouseleave="closeMenu()">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="lodging.html">Lodging</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="#" id="currentPage">Sightseeing</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+        <div id="main">
+            <button class="menuButton" onmouseenter="openMenu()">&#9776;</button>
+            <h1 class="pageTitle">Sightseeing</h1>
+            <div class="content">
+                <div class="container">
+                    <p>Taniti City is the heart of the island, where most tourists go to experience the best of what the island has to offer. The city is known for its stunning native architecture, showcasing traditional designs that offer a glimpse into the island's rich history. Stroll through the vibrant streets and discover the unique charm of Taniti's buildings.</p>
+                    <img src="architecture.jpg" alt="img not found">
+            </div>
+                <p>For those looking to venture further, Taniti offers exciting tours and activities. Boat or bus tours of the island give you the chance to see its diverse landscapes, from coastal cliffs to lush forests. If you're an adventure enthusiast, take a hike through the island's vibrant rainforest, where you can immerse yourself in the beauty of tropical flora and fauna. For a truly unique experience, visit Taniti's active volcano, a natural wonder where you can witness the island's raw power up close.</p>
+            </div>
+        </div>
+        <footer>
+            <p>All photos were sourced from <a href="www.gettyimages.com">www.gettyimages.com</a>.</p>
+        </footer>
+    </main>
+</html>

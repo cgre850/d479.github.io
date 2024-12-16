@@ -1,0 +1,75 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Taniti</title>
+		<link rel="stylesheet" href="styles.css">   
+	</head>
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+    </script>
+    <main>
+        <div id="menu" onmouseleave="closeMenu">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="lodging.html">Lodging</a>
+            <a href="#" id="currentPage">Entertainment</a>
+            <a href="sightseeing.html">Sightseeing</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+        <div id="main">
+            <button class="menuButton" onmouseenter="openMenu()">&#9776;</button>
+            <h1 class="pageTitle">Entertainment</h1>
+            <div class="content">
+                <p>There is no such thing as a boring day in Taniti. With a wide range of entertainment options, there is definitely something that will interest you. Most of our attractions can be found in Merriton Landing, on the north side of Yellow Leaf Bay.</p>
+                <div class="imgList">
+                    <div class="list">
+                    <p>Activities:
+                        <ul>
+                            <li>History Museum<p class="desc">A great a way to look into the origins of the first enhabitants of the island.</p></li>
+                            <li>Chartered Fishing Tour<p class="desc">Gain some experience and exitement as you fish in the deep blue ocean surrounding Taniti.</p></li>
+                            <li>Snorkeling<p class="desc">Explore the depths of the sea.</p></li>
+                            <li>Zip-lining<p class="desc">Zip through the dense rainforest in this once in a lifetime experience.</p></li>
+                            <li>Movie Theater<p class="desc">Kick back and relax while watching a new movie or an old classic.</p></li>
+                            <li>Helicopter Rides<p class="desc">Take in a view like no other as you fly around the island.</p></li>
+                            <li>Arcade<p class="desc">Go back to your younger days or experience the games of new.</p></li>
+                            <li>Art Gallery<p class="desc">Take in the art of Taniti.</p></li>
+                            <li>Bowling<p class="desc">A guaranteed fun night out with the whole family.</p></li>
+
+                        </ul>
+                    </p>
+                    <p>Night Life:
+                        <ul>
+                            <li>Pub Island<p class="desc">A family owned pub, with amazing live music every night.</p></li>
+                            <li>Taniti Night Club<p class="desc">A fan favorite of the younger crowd.</p></li>
+                            <li>Microbrewery Isle<p class="desc">This establishment offers a guided tour through the history of wine on the island.</p></li>
+                        </ul>
+                    </p>
+                    <p>Coming Soon:</p>
+                        <ul>
+                            <li>Nine-Hole Golf Course<p class="desc">Expected to be operational next year.</p></li>
+                        </ul>
+                    </div>
+                    <div class="listIMG">
+                    <img src="museum.jpg" alt="img not found">
+                    <img src="snorkeling.jpg" alt="img not found">
+                    <img src="zipline.jpg" alt="img not found">
+                    <!-- <img src="img" alt="img not found">
+                    <img src="img" alt="img not found"> -->
+                </div>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <p>All photos were sourced from <a href="www.gettyimages.com">www.gettyimages.com</a>.</p>
+        </footer>
+    </main>
+</html>

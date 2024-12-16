@@ -1,0 +1,43 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Taniti</title>
+		<link rel="stylesheet" href="styles.css">   
+	</head>
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+    </script>
+    <main>
+        <div id="menu" onmouseleave="closeMenu()">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="lodging.html">Lodging</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="sightseeing.html">Sightseeing</a>
+            <a href="#" id="currentPage">Transportation</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+        <div id="main">
+            <button class="menuButton" onmouseenter="openMenu()">&#9776;</button>
+            <h1 class="pageTitle">Transportation</h1>
+            <div class="content">
+                <div class="container">
+                    <p>Most visitors of Taniti arrive by plane at the small airport in Taniti City. However, some arrive on a small cruise that docks in Yellow Leaf Bay once a week. Taniti is planning to expand its airport to accommodate more visitors that want to experience what the island has to offer.</p>
+                    <img src="bus.jpg" alt="img not found">
+            </div>
+                <p>Public buses can be used to travel around Taniti City from 5 a.m. to 11 p.m. every day. Additionally, private buses can be found across the island. Taxis are available in Taniti City, and rental cars can be found near the airport. Serveral vendors offer the ability to rent bikes and helmets, just ensure you are wearing a helmet as it's required by law.</p>
+            </div>
+        </div>
+        <footer>
+            <p>All photos were sourced from <a href="www.gettyimages.com">www.gettyimages.com</a>.</p>
+        </footer>
+    </main>
+</html>

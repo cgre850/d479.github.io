@@ -1,0 +1,50 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Taniti</title>
+		<link rel="stylesheet" href="styles.css">   
+	</head>
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+    </script>
+    <main>
+        <div id="menu" onmouseleave="closeMenu()">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="lodging.html">Lodging</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="sightseeing.html">Sightseeing</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="#" id="currentPage">FAQs</a>
+        </div>
+        <div id="main">
+            <button class="menuButton" onmouseenter="openMenu()">&#9776;</button>
+            <h1 class="pageTitle">Frequently Asked Questions</h1>
+            <div class="content">
+                <p>Here a list of the most frequent questions from visitors of Taniti. Hopefully whatever inquiry you have can be provided below.</p>
+                <p>
+                    <ul>
+                        <li>What outlets are available?<p class="desc">Power outlets are 120 volts (the same as the United States).</p></li>
+                        <li>Are there any restrictions on alcohol?<p class="desc">Alcohol cannot be sold between midnight and 9:00 a.m. Additionally, you must be at least 18 to purchase alcohol.</p></li>
+                        <li>Are there many English speakers?<p class="desc">English is spoken by many younger Tanitians, but is not very common in rural areas, especially among the older residents.</p></li>
+                        <li>What medical facilities are available?<p class="desc">There is one hospital and several clinics across the island.</p></li>
+                        <li>Is Taniti dangerous?<p class="desc">Violent crimes are rare on the island, but as more tourists visit, there are more reports of petty crimes.</p></li>
+                        <li>Do attractions close for holidays?<p class="desc">Yes, Taniti recognizes several national holidays and most attractions will be closed during those days.</p></li>
+                        <li>What currency is needed?<p class="desc">Taniti uses U.S. dollar, however, many places accept euros and yen. Several banks offer currency exchange, and many businesses accept major credit cards.</p></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <p>All photos were sourced from <a href="www.gettyimages.com">www.gettyimages.com</a>.</p>
+        </footer>
+    </main>
+</html>

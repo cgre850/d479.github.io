@@ -1,0 +1,82 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Taniti</title>
+		<link rel="stylesheet" href="styles.css">   
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+        // Slideshow script
+        let slideIndex = 1;
+        function nextSlide() {
+            slideIndex++
+            showSlides(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex--
+            showSlides(slideIndex);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides")
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+	</head>
+    <main>
+        <div id="menu" onmouseleave="closeMenu()">
+            <a href="#" id="currentPage">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="lodging.html">Lodging</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="sightseeing.html">Sightseeing</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+        <div id="main">
+            <header>
+                <button class="menuButton" onmouseenter="openMenu()">&#9776;</button>
+                <h1 class="pageTitle">Taniti</h1>
+            </header>
+            <div class="content">
+                <div class="container">
+                    <div class="slideShow">
+                        <div class="slides" id="firstIMG">
+                            <img src="volcano.jpg" alt="img not found">
+                        </div>
+                        <div class="slides">
+                            <img src="island.jpg" alt="img not found">
+                        </div>
+                        <div class="slides">
+                            <img src="island1.jpg" alt="img not found">
+                        </div>
+                        <a class="prev" onclick="prevSlide()">&#10094;</a>
+                        <a class="next" onclick="nextSlide()">&#10095;</a>
+                    </div>
+
+                    <p>Welcome to Taniti, a hidden tropical paradise nestled in the heart of the Pacific! This charming island, with its lush rainforests, pristine sandy and rocky beaches, and dramatic mountainous landscapes, offers an unforgettable getaway for adventurers and relaxation seekers alike.</p>
+                </div>
+                    <p>With an area of less than 500 square miles, Taniti is home to a vibrant indigenous community of 20,000 residents, preserving its rich culture and traditions. The island's diverse terrain includes a small, active volcano, offering stunning views and thrilling exploration opportunities.</p>
+                <p>Taniti's safe harbor provides access to both tranquil waters and incredible marine life, making it a haven for fishing and water activities. Whether you're exploring the rainforest, hiking to scenic viewpoints, or indulging in the island's authentic cuisine, there is always something exciting to experience.</p>
+                <p>As tourism continues to grow, Taniti has become a must-visit destination with a wide range of activities, local entertainment, and unforgettable experiences. Whether you seek adventure, serenity, or a mix of both, Taniti promises an island escape like no other. Come discover the magic of Taniti—your tropical paradise awaits!</p>
+            </div>
+        </div>
+        <footer>
+            <p>All photos were sourced from <a href="www.gettyimages.com">www.gettyimages.com</a>.</p>
+        </footer>
+    </main>
+</html>

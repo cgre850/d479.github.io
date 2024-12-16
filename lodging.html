@@ -1,0 +1,61 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Taniti</title>
+		<link rel="stylesheet" href="styles.css">   
+	</head>
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+    </script>
+    <main>
+        <div id="menu" onmouseleave="closeMenu()">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="#" id="currentPage">Lodging</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="sightseeing.html">Sightseeing</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+        <div id="main">
+            <button class="menuButton" onmouseenter="openMenu()">&#9776;</button>
+            <h1 class="pageTitle">Lodging</h1>
+            <div class="content">
+                <p>Taniti offers a wide range of options for lodging during your stay. From an inexpensive hostel, to a large, four-star resort, no matter your budget we have the place for you.</p>
+                <div class="imgList">
+                    <div class="list">
+                <p>Volcanic Beach Resort:
+                    <ul>
+                        <li>
+                            <p class="desc">With a fantastic view of our volcano, and easy access to the beach, the Volcanic Beach Resort is our top choice if it fits your budget.</p>
+                        </li>
+                    </ul>
+                </p>
+                <p>Hotels:
+                    <ul>
+                        <li>Taniti Inn<p class="desc">A great balance of price and accommodation.</p></li>
+                        <li>Some Beach<p class="desc">A little pricier, but this family owned hotel resides in the midst of the night life on the island.</p></li>
+                        <li>Pink Umbrella<p class="desc">Among the many of hotels that have been family owned for generations, this pick gives direct access the white sandy beaches.</p></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="listIMG">
+                <img src="hotel2.jpg" alt="img not found">
+                <img src="hotel3.jpg" alt="img not found">
+            </div>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <p>All photos were sourced from <a href="www.gettyimages.com">www.gettyimages.com</a>.</p>
+        </footer>
+    </main>
+</html>

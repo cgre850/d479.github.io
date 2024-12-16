@@ -1,0 +1,76 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Taniti</title>
+		<link rel="stylesheet" href="styles.css">   
+	</head>
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+    </script>
+    <main>
+        <div id="menu" onmouseleave="closeMenu()">
+            <a href="index.html">Home</a>
+            <a href="#" id="currentPage">Restaurants</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="lodging.html">Lodging</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="sightseeing.html">Sightseeing</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+        <div id="main">
+            <button class="menuButton" onmouseenter="openMenu()">&#9776;</button>
+            <h1 class="pageTitle">Restaurants</h1>
+            <div class="content">
+                <p>Taniti has a diverse selection of restaurants to suite your every craving. You could enjoy an authentic fish and rice meal, classic American-style, or even endulge in Pan-Asian cuisine. Review our list of restaurants, and savor that flavor today.</p>
+                <div class="imgList">
+                    <div class="list">
+                    <p>Local Fish and Rice Dishes:
+                        <ul>
+                            <li>Restaurant 1</li>
+                            <li>Restaurant 2</li>
+                            <li>Restaurant 3</li>
+                            <li>Restaurant 4</li>
+                            <li>Restaurant 5</li>
+                        </ul>
+                    </p>
+                </div>
+                    <img src="food1.jpg" alt="img not found">
+                </div>
+                <div class="imgList">
+                    <div class="list">
+                <p>Classic American-Style Meals:
+                    <ul>
+                        <li>Restaurant 6</li>
+                        <li>Restaurant 7</li>
+                        <li>Restaurant 8</li>
+                    </ul>
+                </p>
+            </div>
+            <img src="food2.jpg" alt="img not found">
+            </div>
+            <div class="imgList">
+                <div class="list">
+                <p>Pan-Asain Cuisine:
+                    <ul>
+                        <li>Restaurant 9</li>
+                        <li>Restaurant 10</li>
+                    </ul>
+                </p>
+            </div>
+            <img src="food3.jpg" alt="img not found">
+            </div>
+            </div>
+        </div>
+        <footer>
+            <p>All photos were sourced from <a href="www.gettyimages.com">www.gettyimages.com</a>.</p>
+        </footer>
+    </main>
+</html>
